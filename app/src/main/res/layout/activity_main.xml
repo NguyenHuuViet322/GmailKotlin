@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/baseline_check_circle_24" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="22dp"
+            android:text="Touch a sender image to select that conversation."
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <ImageButton
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_cancel_24"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="360dp"
+            android:layout_marginTop="30dp"
+            />
+    </RelativeLayout>
+
+    <ListView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mailView">
+
+    </ListView>
+</androidx.constraintlayout.widget.ConstraintLayout>

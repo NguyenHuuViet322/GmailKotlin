@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gmailRed">#dc4236</color>
+    <color name="avatar1">#60a6c1</color>
+    <color name="avatar2">#805781</color>
+    <color name="avatar3">#67bf74</color>
+    <color name="avatar4">#2093cd</color>
+</resources>
